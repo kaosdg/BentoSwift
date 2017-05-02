@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'BentoSwift_Example' do
-  pod 'BentoSwift', :path => '../'
+  pod 'BentoSwift', :podspec => '../BentoSwift.podspec'
 
   target 'BentoSwift_Tests' do
     inherit! :search_paths

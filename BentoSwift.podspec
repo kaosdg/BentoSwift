@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'BentoSwift/Classes/**/*'
+  s.source_files = ['BentoSwift/Classes/**/*', 'BentoSwift/Static\ Frameworks/AdobeAppMeasurement_4_8_4/headers/*.h']
   
   # s.resource_bundles = {
   #   'BentoSwift' => ['BentoSwift/Assets/*.png']
@@ -39,4 +39,12 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+# s.source_files = 'Static\ Frameworks/AdobeAppMeasurement_4_8_4/headers/*.h'
+s.public_header_files = 'BentoSwift/Static\ Frameworks/AdobeAppMeasurement_4_8_4/headers/*.h'
+# s.preserve_paths = 'BentoSwift/Static\ Frameworks/AdobeAppMeasurement_4_8_4/lib/libAdobeMobileLibrary.a'
+s.ios.vendored_libraries = 'BentoSwift/Static\ Frameworks/AdobeAppMeasurement_4_8_4/lib/libAdobeMobileLibrary.a'
+s.libraries = 'sqlite3.0'
+s.frameworks = 'Foundation','SystemConfiguration', 'UIKit'
+
 end

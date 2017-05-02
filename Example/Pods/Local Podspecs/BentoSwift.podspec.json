@@ -1,0 +1,35 @@
+{
+  "name": "BentoSwift",
+  "version": "0.1.0",
+  "summary": "A short description of BentoSwift.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/kaosdg/BentoSwift",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kaosdg": "Karl.Catigbe@viacom.com"
+  },
+  "source": {
+    "git": "https://github.com/kaosdg/BentoSwift.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": [
+    "BentoSwift/Classes/**/*",
+    "BentoSwift/Static\\ Frameworks/AdobeAppMeasurement_4_8_4/headers/*.h"
+  ],
+  "public_header_files": "BentoSwift/Static\\ Frameworks/AdobeAppMeasurement_4_8_4/headers/*.h",
+  "ios": {
+    "vendored_libraries": "BentoSwift/Static\\ Frameworks/AdobeAppMeasurement_4_8_4/lib/libAdobeMobileLibrary.a"
+  },
+  "libraries": "sqlite3.0",
+  "frameworks": [
+    "Foundation",
+    "SystemConfiguration",
+    "UIKit"
+  ]
+}
